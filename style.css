@@ -40,9 +40,10 @@ main {
 /*Animation forms */
 
 .box__animation{
+    border-radius: 5px;
     height: 60%;
-    border: 1px solid #B6B5B4;
     position: relative;
+    box-shadow: 1px 1px 70px rgba(255, 255, 255, 0.497);
     overflow: hidden;
 }
 
@@ -53,6 +54,7 @@ main {
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    border-radius: 3px;
 }
 
 .contour-bas{
@@ -93,7 +95,7 @@ main {
 
 @keyframes contourRight {
     from{
-        opacity: 0.2;
+        
         transform: translateY(500%);
     }
     to{
@@ -103,7 +105,7 @@ main {
 
 @keyframes contourLeft {
     from{
-        opacity: 0.2;
+        
         transform: translateY(-100%);
     }
     to{
@@ -113,7 +115,7 @@ main {
 
 @keyframes contourBottom {
     from{
-        opacity: 0.2;
+        
         transform: translateX(-100%);
     }
     to{
@@ -123,7 +125,7 @@ main {
 
 @keyframes contourTop {
     from{
-        opacity: 0.2;
+        
         transform: translateX(500%);
     }
     to{
@@ -267,8 +269,19 @@ a{
     transition-duration: 1s;
 }
 
+i{
+    opacity: 0;
+    transition-duration: 1s;
+    transform: translateX(200%);
+}
+
 a:hover {
     color: #ff5b5e;
     text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.497);
     transform: translateX(30px);
+}
+
+a:hover i {
+    transform: none;
+    opacity: 1;
 }
