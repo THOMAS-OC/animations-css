@@ -61,13 +61,34 @@ main {
     flex-direction: column;
     width: 40%;
     height: 50%;
-    border: 2px solid blue;
+}
+
+.box__footer__properties{
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .lineProperty{
     height: 2px;
     width: 100%;
-    background-color: b6b5b4;
+    background-color: #51504F;
+}
+
+.scaleLine {
+    margin: auto;
+    animation-name: scaleLine;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+@keyframes scaleLine {
+    50%{
+        width: 100%;
+    }
 }
 
 .line{
