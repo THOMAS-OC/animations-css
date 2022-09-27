@@ -12,7 +12,6 @@ main {
     margin: auto;
     width: 50vw;
     height: 1100px;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,7 +59,7 @@ main {
     justify-content: space-between;
     flex-direction: column;
     width: 40%;
-    height: 50%;
+    height: 70%;
 }
 
 .box__footer__properties{
@@ -75,14 +74,80 @@ main {
     background-color: #51504F;
 }
 
+.lineProperty2{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.squareOfFooter{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation-name: squareOfFooter;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.squareOfFooter2{
+    animation-delay: 0.2s;
+}
+.squareOfFooter3{
+    animation-delay: 0.3s;
+}
+.squareOfFooter4{
+    animation-delay: 0.4s;
+}
+.squareOfFooter5{
+    animation-delay: 0.5s;
+}
+.squareOfFooter6{
+    animation-delay: 0.6s;
+}
+.squareOfFooter7{
+    animation-delay: 0.7s;
+}
+.squareOfFooter8{
+    animation-delay: 0.8s;
+}
+
+.animateLine {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+.translateXline{
+    width: 20%;
+    animation-name: translateXline;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 .scaleLine {
     margin: auto;
     animation-name: scaleLine;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    width: 30%;
-    height: 100%;
-    background-color: white;
+}
+
+.circleOfFooter{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px dotted white;
+}
+
+@keyframes translateXline {
+    50%{
+        transform: translateX(400%);
+    }
+}
+
+@keyframes squareOfFooter {
+    50%{
+        transform: translateY(180%);
+    }
 }
 
 @keyframes scaleLine {
@@ -94,7 +159,7 @@ main {
 .line{
     position: absolute;
     width: 1px;
-    height: 50%;
+    height: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
